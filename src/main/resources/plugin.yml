@@ -1,0 +1,6 @@
+name: MineBox
+author: Matthieuu
+main: me.matthieu.Main
+depend:
+  - ViaVersion
+version: 1.0
