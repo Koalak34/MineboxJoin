@@ -20,7 +20,7 @@ public class PlayerJoin implements Listener {
     public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
         int version = api.getPlayerVersion(p);
-        if(version == 759 || version == 760 || version == 761 && p.hasPlayedBefore()){
+        if(version == 759 || version == 760 || version == 761 && !p.hasPlayedBefore()){
             p.getInventory().setItem(4, createBook(p));
             p.getInventory().setHeldItemSlot(4);
 
